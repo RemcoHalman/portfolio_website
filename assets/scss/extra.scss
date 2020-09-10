@@ -1,0 +1,28 @@
+header.masthead {
+    height: 800px;
+    background-image: url("../img/profile.JPG");
+    background-size: cover;
+    background-color: #148f763a !important;
+    background-position: 50% 50%;
+    background-blend-mode: darken;
+
+    img {
+        opacity: 0.5;
+    }
+
+    div.background-box {
+        padding: 10px;
+        border-radius: 10px;
+        color: white; // rgb(73, 73, 73);
+        background-color: #a0a0a08a;
+
+        p {
+            color: white;
+        }
+    }
+}
+
+.portfolio-item {
+    max-height: 200px;
+
+}
