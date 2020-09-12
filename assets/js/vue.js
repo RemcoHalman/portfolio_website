@@ -197,6 +197,15 @@ Vue.component("portfolio", {
                     projectDescription:
                         "Licht effect voor een Game in The Lost Ones",
                 },
+                {
+                    projectId: 13,
+                    projectName: "Escaperoom game",
+                    projectImage:
+                        "/assets/img/portfolio/touchscreen_js_game.jpg",
+                    projectTags: ["Javascript", "Html", "Css"],
+                    projectDescription:
+                        "Touchscreen spel. Bezoekers moeten het juiste woord invoeren om verder te kunnen",
+                },
             ],
         };
     },
