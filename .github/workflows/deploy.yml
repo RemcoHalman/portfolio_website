@@ -14,14 +14,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v2.1.4
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
         with:
-          # Private Key
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }} 
-          # Remote host
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          # Remote user
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          ARGS: "-rltgoDzvO --delete"
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }} 
+          script: whoami
