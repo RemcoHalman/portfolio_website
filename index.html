@@ -47,7 +47,7 @@
         />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS -->
         <link href="./assets/css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/extra.css" />
     </head>
@@ -319,6 +319,14 @@
                 </div>
             </div>
         </section>
+        <!-- Cookie Notice -->
+        <div id="cookieConsent">
+            We use cookies to enhance your experience. By continuing to visit
+            this site you agree to our use of cookies.
+            <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank"
+                >More info</a
+            >. <a class="cookieConsentOK">Ok.</a>
+        </div>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -359,7 +367,6 @@
                 ><i class="fa fa-chevron-up"></i
             ></a>
         </div>
-
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -371,5 +378,15 @@
         <!-- Core theme JS-->
         <script src="./assets/js/scripts.js"></script>
         <script src="./assets/js/vue.js"></script>
+        <script>
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $("#cookieConsent").fadeIn(200);
+                }, 3000);
+                $(".cookieConsentOK").click(function () {
+                    $("#cookieConsent").fadeOut(200);
+                });
+            });
+        </script>
     </body>
 </html>
