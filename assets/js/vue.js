@@ -80,7 +80,16 @@ Vue.component("portfolio", {
                                 </h2>
                                 <p class="">
                                     <div class="badge badge-pill badge-dark mx-1" v-for="tag in project.projectTags">{{tag}}</div>
-                                </p>
+                                </p>       
+                                <div v-if="project.projectLink">
+                                <hr>
+                                    <h2 class="h5">
+                                        Website
+                                    </h2>
+                                    <p class="">
+                                        <a target="_blank" :href="project.projectLink">{{project.projectName}}</a>
+                                    </p>
+                                </div>
                                 <button
                                     class="btn btn-primary mt-5"
                                     data-dismiss="modal"
@@ -109,6 +118,7 @@ Vue.component("portfolio", {
                     projectTags: ["html 5", "css", "Wordpress"],
                     projectDescription:
                         "Nieuwe website Escaperoom Drachten. Met extra Custom Post Types om gemakkelijk een nieuwe kamer toe te voegen",
+                    projectLink: "https://www.escaperoomdrachten.nl/",
                 },
                 {
                     projectId: 2,
@@ -118,6 +128,7 @@ Vue.component("portfolio", {
                     projectTags: ["html 5", "css", "Wordpress"],
                     projectDescription:
                         "Website van Timmerbedrijf R Wynia om online extra vindbaar te zijn",
+                    projectLink: "https://www.rwynia.nl/",
                 },
                 {
                     projectId: 3,
@@ -140,7 +151,7 @@ Vue.component("portfolio", {
                     projectImage: "/assets/img/portfolio/photo_mailer.jpg",
                     projectTags: ["html 5", "css", "Flask", "Python"],
                     projectDescription:
-                        "Web app om foto's te verzenden naar gasten.<br/>Inclusief een leuke mail.",
+                        "Web app om foto's te verzenden naar gasten. Inclusief een leuke mail.",
                 },
                 {
                     projectId: 6,
@@ -149,7 +160,7 @@ Vue.component("portfolio", {
                         "/assets/img/portfolio/escaperoomdrachten_uren.jpg",
                     projectTags: ["html 5", "css", "Django", "Python"],
                     projectDescription:
-                        "Web app Escaperoom Drachten om de uren registratie van personeel bij te houden. <br/> Personeel werkt steeds meer zelfstandig en zo kan iedereen makkelijk zien wat de planning is",
+                        "Web app Escaperoom Drachten om de uren registratie van personeel bij te houden. Het personeel werkt steeds meer zelfstandig en zo kan iedereen makkelijk zien wat de planning is.",
                 },
                 {
                     projectId: 7,
@@ -205,6 +216,16 @@ Vue.component("portfolio", {
                     projectTags: ["Javascript", "Html", "Css"],
                     projectDescription:
                         "Touchscreen spel. Bezoekers moeten het juiste woord invoeren om verder te kunnen",
+                },
+                {
+                    projectId: 14,
+                    projectName: "Holiday Countdown",
+                    projectImage:
+                        "/assets/img/portfolio/websites/holiday_countdown.jpg",
+                    projectTags: ["Javascript", "VueJS", "Html", "SCSS"],
+                    projectDescription:
+                        "Een countdown tot de komende feestdagen.",
+                    projectLink: "https://www.remcohalman.nl/countdown",
                 },
             ],
         };
