@@ -218,6 +218,14 @@ Vue.component("portfolio", {
                         "Touchscreen spel. Bezoekers moeten het juiste woord invoeren om verder te kunnen",
                 },
                 {
+                    projectId: 15,
+                    projectName: "Vue Monster Slayer",
+                    projectImage:
+                        "/assets/img/portfolio/vue_monster_slayer.jpg",
+                    projectTags: ["Vue", "Javascript", "Html", "Css"],
+                    projectDescription: "Simpel online click game",
+                },
+                {
                     projectId: 14,
                     projectName: "Holiday Countdown",
                     projectImage:
