@@ -224,6 +224,7 @@ Vue.component("portfolio", {
                         "/assets/img/portfolio/vue_monster_slayer.jpg",
                     projectTags: ["Vue", "Javascript", "Html", "Css"],
                     projectDescription: "Simpel online click game",
+                    projectLink: "https://remcohalman.nl/monster-slayer/",
                 },
                 {
                     projectId: 14,
