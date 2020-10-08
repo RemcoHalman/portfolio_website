@@ -235,7 +235,17 @@ Vue.component("portfolio", {
                     projectDescription:
                         "Een countdown tot de komende feestdagen.",
                     projectLink: "https://www.remcohalman.nl/countdown",
-                },
+                }, 
+                {
+                    projectId: 16,
+                    projectName: "Vue versie van community website (vuejs branch)",
+                    projectImage:
+                        "/assets/img/portfolio/websites/holiday_countdown.jpg",
+                    projectTags: ["Javascript", "VueJS", "Html", "SCSS", "CSS"],
+                    projectDescription:
+                        "Een rebuild van een community website. Om verschillende frameworks te vergelijken",
+                    projectLink: "https://github.com/EddieJaoudeCommunity/EddieJaoudeCommunity.github.io"
+                }, 
             ],
         };
     },
