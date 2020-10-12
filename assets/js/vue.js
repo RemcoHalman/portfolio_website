@@ -245,7 +245,7 @@ Vue.component("portfolio", {
           projectDescription:
             "Een rebuild van een community website. Om verschillende frameworks te vergelijken. Cypress word gebruikt om te testen",
           projectLink:
-            "https://github.com/EddieJaoudeCommunity/EddieJaoudeCommunity.github.io",
+            "https://github.com/EddieJaoudeCommunity/EddieJaoudeCommunity.github.io/tree/vuejs",
         },
       ],
     };
