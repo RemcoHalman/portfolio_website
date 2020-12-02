@@ -131,6 +131,15 @@ Vue.component("portfolio", {
           projectLink: "https://www.rwynia.nl/",
         },
         {
+          projectId: 17,
+          projectName: "Webshop NH Wenje (Not in Development)",
+          projectImage:
+            "/assets/img/portfolio/websites/nhwenje.png",
+          projectTags: ["html 5", "css", "Wordpress", "WooCommerce"],
+          projectDescription:
+            "Webshop van NH Wenje.",
+        },
+        {
           projectId: 3,
           projectName: "Emmelocked",
           projectImage: "/assets/img/portfolio/leds_emmelocked.gif",
