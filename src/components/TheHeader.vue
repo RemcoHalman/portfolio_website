@@ -1,9 +1,15 @@
 <template>
-  <div id="header" :style="image" class="">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
+  <div id="nav">
+    <router-link class="site" to="/">Remco Halman</router-link>
+    <router-link to="/">Home</router-link>
+    <router-link to="/portfolio">Portfolio</router-link>
   </div>
+  <div
+    v-if="$route.meta.header === 'home-header'"
+    id="header-image"
+    :style="image"
+    class=""
+  ></div>
 </template>
 
 <script>
@@ -16,8 +22,7 @@ export default {
         backgroundImage: `url('${image}')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center bottom",
+        backgroundPosition: "center center",
       },
     };
   },
@@ -25,7 +30,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#header {
-  height: 50vh;
+#header-image {
+  height: 500px;
+}
+
+#nav {
+  background-color: #1a252f;
+  .site {
+    margin-right: 40%;
+  }
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    display: inline-block;
+    padding: 20px 16px;
+    font-size: 17px;
+
+    &.router-link-exact-active {
+      color: #fff;
+    }
+  }
 }
 </style>
