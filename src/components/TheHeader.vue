@@ -41,11 +41,16 @@ export default {
   }
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: rgb(170, 170, 170);
     display: inline-block;
     padding: 20px 16px;
     font-size: 17px;
+    text-decoration: none;
 
+    &.router-link-active {
+      color: #fff;
+      text-decoration: underline;
+    }
     &.router-link-exact-active {
       color: #fff;
     }
