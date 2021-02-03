@@ -1,31 +1,14 @@
-name: Deploy GH pages
-description: "This Action will Build your Vue Project and deploy it to Github Pages"
-
-inputs:
-  username:
-    description: "Your username"
-    required: true
-  reponame:
-    description: "Your reponame"
-    required: true
-  token:
-    description: "Your Github token"
-    required: false
-
-on:
-  push:
-
+name: Build Vue
+on: [push]
 jobs:
-  deploy:
+  build_vue:
     runs-on: ubuntu-latest
     name: Build Vue
     steps:
       - uses: actions/checkout@v2
-      - name: Run a multi-line script
-        env:
-          username: "YourGithubName"
-          reponame: "YourRepoName"
+      - id: Build-Vue
+        uses: xRealNeon/VuePagesAction@1.0.0
+        with:
+          username: "RemcoHalman"
+          reponame: "portfolio_website"
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-        run: |
-          echo username: $username
-          echo reponame: $reponame
