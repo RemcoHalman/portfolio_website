@@ -11,4 +11,7 @@ jobs:
         with:
           username: "RemcoHalman"
           reponame: "portfolio_website"
+          gitemail: "remco.halman@gmail.com"
+          gitname: "RemcoHalman"
+          gitmsg: "Deploy vue website"
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
