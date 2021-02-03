@@ -1,0 +1,46 @@
+.cookie {
+
+    // Bar style
+    &__bar {
+        &--bottom {}
+
+        &--top {}
+
+        &__postpone-button {}
+
+        &__content {}
+
+        &__buttons {
+
+            &__button {
+                &--accept {}
+
+                &--decline {}
+            }
+        }
+    }
+
+    // Floating style
+    &__floating {
+        &--bottom-left {}
+
+        &--bottom-right {}
+
+        &--top-right {}
+
+        &--top-left {}
+
+        &__postpone-button {}
+
+        &__content {}
+
+        &__buttons {
+
+            &__button {
+                &--accept {}
+
+                &--decline {}
+            }
+        }
+    }
+}
