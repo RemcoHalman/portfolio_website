@@ -1,16 +1,31 @@
 name: Deploy GH pages
+description: "This Action will Build your Vue Project and deploy it to Github Pages"
+
+inputs:
+  username:
+    description: "Your username"
+    required: true
+  reponame:
+    description: "Your reponame"
+    required: true
+  token:
+    description: "Your Github token"
+    required: false
 
 on:
   push:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    name: Build Vue
     steps:
-      - uses: actions/checkout@v1
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - uses: actions/checkout@v2
       - name: Run a multi-line script
+        env:
+          username: "YourGithubName"
+          reponame: "YourRepoName"
+          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo username: $username
+          echo reponame: $reponame
