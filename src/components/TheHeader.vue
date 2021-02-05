@@ -1,6 +1,5 @@
 <template>
   <div id="nav">
-    <router-link class="site" to="/">Remco Halman</router-link>
     <router-link to="/">Home</router-link>
     <router-link to="/portfolio">Portfolio</router-link>
   </div>
