@@ -142,11 +142,92 @@ const store = createStore({
             "https://github.com/EddieJaoudeCommunity/EddieJaoudeCommunity.github.io/tree/vuejs",
         },
       ],
+      internShips: {
+        intership_2: {
+          company: "Adfunturepark B.V.",
+          function: "Vormgever",
+          start: "07-2013",
+          stopped: "02-2013",
+          location: "Dokkum",
+        },
+        intership_1: {
+          company: "NOFCOM.nl / noordoostfriesland",
+          function: "Vormgever",
+          start: "02-2011",
+          stopped: "09-2011",
+          location: "Oenkerk",
+        },
+      },
+      workExperience: {
+        job_6: {
+          company: "VodafoneZiggo B.V.",
+          function: "Advisor / WiFi Crew",
+          start: "12-2020",
+          stopped: "tot op heden",
+          location: "Leeuwarden",
+        },
+        job_5: {
+          company: "Escaperoom Drachten v.o.f.",
+          function: "Zelfstandig Ondernemer",
+          start: "04-2016",
+          stopped: "tot op heden",
+          location: "Drachten",
+        },
+        job_4: {
+          company: "Adfunturepark B.V.",
+          function: "Parttime Medewerker, Later aandeelhouder",
+          start: "12-2010",
+          stopped: "03-2016",
+          location: "Dokkum",
+        },
+        job_3: {
+          company: "Poiesz Supermarkten B.V.",
+          function: "Vakkenvuller, Kassa medewerker",
+          start: "06-2010",
+          stopped: "07-2011",
+          location: "Dokkum",
+        },
+        job_2: {
+          company: "NOFCOM.nl/noordoostfriesland.nl",
+          function: "Stageplaats, Vormgever",
+          start: "02-2011",
+          stopped: "08-2011",
+          location: "Oenkerk",
+        },
+        job_1: {
+          company: "Camping en Recreatiecentrum Lauwersoog B.V.",
+          function: "Afwashulp, Snackbarhulp",
+          start: "05-2009",
+          stopped: "08-2010",
+          location: "Lauwersoog",
+        },
+      },
+      education: {
+        middelbareschool: {
+          school: "Piter Jelles Dalton",
+          locatie: "Dokkum",
+          opleiding: "Natuur en techniek",
+          startjaar: 2005,
+          examenjaar: 2009,
+        },
+        middelbaarberoepsonderwijs: {
+          school: "Friesland College",
+          locatie: "Leeuwarden",
+          opleiding: "Mediavormgeving MBO4",
+          startjaar: 2009,
+          examenjaar: 2013,
+        },
+      },
     };
   },
   mutations: {},
   getters: {
     portfolioItems: (state) => state.portfolioItems,
+    workExperience: (state) => {
+      return state.workExperience;
+    },
+    internShips: (state) => state.internShips,
+    education: (state) => state.education,
   },
   actions: {},
 });

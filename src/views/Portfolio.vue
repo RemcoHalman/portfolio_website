@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio">
     <h1>Portfolio Page</h1>
-    <p>Dit is een greep van alle projecten waar ik aan gewerkt</p>
+    <p>Items comming soon!</p>
     <the-portfolio></the-portfolio>
   </div>
 </template>
