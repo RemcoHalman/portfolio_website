@@ -218,6 +218,16 @@ const store = createStore({
           examenjaar: 2013,
         },
       },
+      skillset: {
+        languages: ["HTML5", "SCSS/CSS", "Python", "Javascript", "C++"],
+        frameworks: [
+          ["Flask", "Python"],
+          ["Django", "Python"],
+          ["Vue.js", "Javascript"],
+        ],
+        programmas: ["Adobe Photoshop", "Adobe Illustrator"],
+        extra: ["Docker", "Git", "Linux", "Mac OS"],
+      },
     };
   },
   mutations: {},
