@@ -6,6 +6,17 @@
       Escaperoom Drachten. Inmiddels hebben wij drie thema kamers gebouwd.
     </p>
     <p>
+      Momenteel ben ik mij steeds meer met open source bezig gaan houden. Op
+      mijn Github is daarom ook van alles te vinden via:
+      <a
+        href="https://github.com/RemcoHalman"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Remco Halman</a
+      >
+    </p>
+    <p>
       In 2013 ben ik afgestudeerd van het Friesland College als mediavormgever
       met als specialisatie interactief.
     </p>

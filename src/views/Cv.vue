@@ -29,8 +29,41 @@
           www.github.com/remcohalman
         </a>
       </p>
-
-      <h4>Skillset</h4>
+      <div class="skillset">
+        <h4>Skillset</h4>
+        <div class="languages">
+          <h5>Languages</h5>
+          <ul>
+            <li v-for="job in skillset['languages']" :key="job">
+              {{ job }}
+            </li>
+          </ul>
+        </div>
+        <div class="frameworks">
+          <h5>Frameworks</h5>
+          <ul>
+            <li v-for="job in skillset['frameworks']" :key="job">
+              {{ job[0] }} <small>| {{ job[1] }} </small>
+            </li>
+          </ul>
+        </div>
+        <div class="programmas">
+          <h5>Programma's</h5>
+          <ul>
+            <li v-for="job in skillset['programmas']" :key="job">
+              {{ job }}
+            </li>
+          </ul>
+        </div>
+        <div class="extra">
+          <h5>Extra</h5>
+          <ul>
+            <li v-for="job in skillset['extra']" :key="job">
+              {{ job }}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="right-bar">
       <div class="workExperience">
@@ -81,6 +114,7 @@ export default {
       workExperience: this.$store.state.workExperience,
       internShips: this.$store.state.internShips,
       education: this.$store.state.education,
+      skillset: this.$store.state.skillset,
     };
   },
   computed: {},
@@ -96,8 +130,21 @@ export default {
   }
   .left-bar {
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 350px;
     text-align: center;
+    padding: 0 10px;
+    .skillset {
+      border-top: 1px solid;
+      & > div {
+        h5 {
+          margin-bottom: 0;
+        }
+        ul {
+          margin-top: 5px;
+          padding: 0;
+        }
+      }
+    }
   }
   .right-bar {
     background-color: #f1f1f1;
