@@ -187,13 +187,6 @@ const store = createStore({
           stopped: "07-2011",
           location: "Dokkum",
         },
-        job_2: {
-          company: "NOFCOM.nl/noordoostfriesland.nl",
-          function: "Stageplaats, Vormgever",
-          start: "02-2011",
-          stopped: "08-2011",
-          location: "Oenkerk",
-        },
         job_1: {
           company: "Camping en Recreatiecentrum Lauwersoog B.V.",
           function: "Afwashulp, Snackbarhulp",
