@@ -1,34 +1,36 @@
 <template>
   <div class="cv-flex">
     <div class="left-bar">
-      <h4>Contact gegevens</h4>
-      <p>
-        Remco Halman <br />
-        Swannedrift 21 <br />
-        9022AR Mantgum
-      </p>
+      <div class="contact">
+        <h4>Contact gegevens</h4>
+        <p>
+          Remco Halman <br />
+          Swannedrift 21 <br />
+          9022AR Mantgum
+        </p>
 
-      <p>
-        +31 6 44 11 56 66<br />
-        remco.halman@gmail.com
-      </p>
-      <p>
-        <a
-          href="https://www.remcohalman.nl"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.remcohalman.nl
-        </a>
-        <br />
-        <a
-          href="https://www.github.com/remcohalman"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          www.github.com/remcohalman
-        </a>
-      </p>
+        <p>
+          +31 6 44 11 56 66<br />
+          remco.halman@gmail.com
+        </p>
+        <p>
+          <a
+            href="https://www.remcohalman.nl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.remcohalman.nl
+          </a>
+          <br />
+          <a
+            href="https://www.github.com/remcohalman"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.github.com/remcohalman
+          </a>
+        </p>
+      </div>
       <div class="skillset">
         <h4>Skillset</h4>
         <div class="languages">
@@ -130,9 +132,12 @@ export default {
   }
   .left-bar {
     flex-grow: 1;
-    max-width: 350px;
-    text-align: center;
+    max-width: 280px;
+    text-align: left;
     padding: 0 10px;
+    & > div {
+      padding: 0 1rem;
+    }
     .skillset {
       border-top: 1px solid;
       & > div {
