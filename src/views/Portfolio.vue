@@ -1,7 +1,6 @@
 <template>
   <div class="portfolio">
     <h1>Portfolio Page</h1>
-    <p>Items comming soon!</p>
     <the-portfolio></the-portfolio>
   </div>
 </template>

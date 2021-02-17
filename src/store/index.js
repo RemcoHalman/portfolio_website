@@ -10,6 +10,7 @@ const store = createStore({
         {
           id: 1,
           name: "Escaperoom Drachten",
+          type: "Website",
           image: require("@/assets/img/portfolio/websites/escaperoomdrachten-nl-2020-09-08-14_41_24.png"),
           tags: ["html 5", "css", "Wordpress"],
           description:
@@ -19,6 +20,7 @@ const store = createStore({
         {
           id: 2,
           name: "Timmerbedrijf R Wynia",
+          type: "Website",
           image: require("@/assets/img/portfolio/websites/rwynia-nl-2020-09-08-14_41_44.png"),
           tags: ["html 5", "css", "Wordpress"],
           description:
@@ -27,7 +29,8 @@ const store = createStore({
         },
         {
           id: 17,
-          name: "Webshop NH Wenje (in Development)",
+          name: "Webshop NH Wenje",
+          type: "Webshop",
           image: require("@/assets/img/portfolio/websites/nhwenje.png"),
           tags: ["html 5", "css", "Wordpress", "WooCommerce"],
           description: "Webshop van NH Wenje.",
@@ -35,6 +38,7 @@ const store = createStore({
         {
           id: 3,
           name: "Emmelocked",
+          type: "Arduino Game",
           image: require("@/assets/img/portfolio/leds_emmelocked.gif"),
           tags: ["C++", "Arduino"],
           description: "Licht Effect in Escaperoom Emmelocked.",
@@ -42,6 +46,7 @@ const store = createStore({
         {
           id: 4,
           name: "Escaperoom Effect",
+          type: "Arduino Game",
           image: require("@/assets/img/portfolio/clock_effect.gif"),
           tags: ["C++"],
           description: "Escaperoom Drachten doorgang effect",
@@ -49,6 +54,7 @@ const store = createStore({
         {
           id: 5,
           name: "WebApp to send photo",
+          type: "Webapp",
           image: require("@/assets/img/portfolio/photo_mailer.jpg"),
           tags: ["html 5", "css", "Flask", "Python"],
           description:
@@ -56,7 +62,8 @@ const store = createStore({
         },
         {
           id: 6,
-          name: "WebApp keep track of work hours",
+          name: "Time Tracker",
+          type: "Webapp",
           image: require("@/assets/img/portfolio/escaperoomdrachten_uren.jpg"),
           tags: ["html 5", "css", "Django", "Python"],
           description:
@@ -64,7 +71,8 @@ const store = createStore({
         },
         {
           id: 7,
-          name: "Control of clues send in the escaperoom",
+          name: "Clues interface",
+          type: "Desktop App",
           image: require("@/assets/img/portfolio/clue_control.jpg"),
           tags: ["PyQt5", "Python"],
           description:
@@ -73,6 +81,7 @@ const store = createStore({
         {
           id: 8,
           name: "Control of escaperoom",
+          type: "PLC",
           image: require("@/assets/img/portfolio/automation.jpeg"),
           tags: ["Node", "javascript"],
           description:
@@ -81,6 +90,7 @@ const store = createStore({
         {
           id: 9,
           name: "Escaperoom Game",
+          type: "Arduino Game",
           image: require("@/assets/img/portfolio/buttongame.jpeg"),
           tags: ["C++", "Arduino"],
           description: "Fysieke escaperoom game",
@@ -88,6 +98,7 @@ const store = createStore({
         {
           id: 10,
           name: "Todo App",
+          type: "Webapp",
           image: require("@/assets/img/portfolio/todo.jpg"),
           tags: ["html 5", "css", "Django", "Python"],
           description: "TODO app",
@@ -95,6 +106,7 @@ const store = createStore({
         {
           id: 11,
           name: "Watermarking Images",
+          type: "Desktop App",
           image: require("@/assets/img/portfolio/watermarked.jpg"),
           tags: ["PyQt5", "Python", "Pillow"],
           description:
@@ -103,6 +115,7 @@ const store = createStore({
         {
           id: 12,
           name: "Escaperoom game",
+          type: "Arduino Game",
           image: require("@/assets/img/portfolio/veet_effect.jpeg"),
           tags: ["C++", "Python"],
           description: "Licht effect voor een Game in The Lost Ones",
@@ -110,6 +123,7 @@ const store = createStore({
         {
           id: 13,
           name: "Escaperoom game",
+          type: "Webgame",
           image: require("@/assets/img/portfolio/touchscreen_js_game.jpg"),
           tags: ["Javascript", "Html", "Css"],
           description:
@@ -118,6 +132,7 @@ const store = createStore({
         {
           id: 15,
           name: "Vue Monster Slayer",
+          type: "Webgame",
           image: require("@/assets/img/portfolio/vue_monster_slayer.jpg"),
           tags: ["Vue", "Javascript", "Html", "Css"],
           description: "Simpel online click game",
@@ -126,6 +141,7 @@ const store = createStore({
         {
           id: 14,
           name: "Holiday Countdown",
+          type: "Webapp",
           image: require("@/assets/img/portfolio/websites/holiday_countdown.jpg"),
           tags: ["Javascript", "VueJS", "Html", "SCSS"],
           description: "Een countdown tot de komende feestdagen.",
@@ -134,6 +150,7 @@ const store = createStore({
         {
           id: 16,
           name: "Vue versie van community website (vuejs branch)",
+          type: "Website",
           image: require("@/assets/img/portfolio/websites/eddiejaoudecommunity-github-io-2020-10-09-12_35_03.png"),
           tags: ["Javascript", "VueJS", "Html", "SCSS", "CSS", "cypress"],
           description:
