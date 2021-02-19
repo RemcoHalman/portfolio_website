@@ -18,7 +18,6 @@
 
 <script>
 import PortfolioItem from "./PortfolioItem.vue";
-// import { mapGetters } from "vuex";
 
 export default {
   components: { PortfolioItem },

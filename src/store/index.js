@@ -136,7 +136,6 @@ const store = createStore({
           image: require("@/assets/img/portfolio/vue_monster_slayer.jpg"),
           tags: ["Vue", "Javascript", "Html", "Css"],
           description: "Simpel online click game",
-          link: "https://remcohalman.nl/monster-slayer/",
         },
         {
           id: 14,
@@ -145,7 +144,6 @@ const store = createStore({
           image: require("@/assets/img/portfolio/websites/holiday_countdown.jpg"),
           tags: ["Javascript", "VueJS", "Html", "SCSS"],
           description: "Een countdown tot de komende feestdagen.",
-          link: "https://www.remcohalman.nl/countdown",
         },
         {
           id: 16,
