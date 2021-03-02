@@ -11,6 +11,7 @@
       :tags="item.tags"
       :link="item.link"
       :type="item.type"
+      :link_short="item.link_short"
     >
     </portfolio-item>
   </div>

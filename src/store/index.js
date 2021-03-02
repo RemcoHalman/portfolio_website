@@ -16,6 +16,7 @@ const store = createStore({
           description:
             "Nieuwe website Escaperoom Drachten. Met extra Custom Post Types om gemakkelijk een nieuwe kamer toe te voegen",
           link: "https://www.escaperoomdrachten.nl/",
+          link_short: "Escaperoom Drachten",
         },
         {
           id: 2,
@@ -26,6 +27,7 @@ const store = createStore({
           description:
             "Website van Timmerbedrijf R Wynia om online extra vindbaar te zijn",
           link: "https://www.rwynia.nl/",
+          link_short: "Timmerbedrijf R Wynia",
         },
         {
           id: 17,
@@ -34,6 +36,8 @@ const store = createStore({
           image: require("@/assets/img/portfolio/websites/nhwenje.png"),
           tags: ["html 5", "css", "Wordpress", "WooCommerce"],
           description: "Webshop van NH Wenje.",
+          link: "https://www.nhwenje.nl/",
+          link_short: "Webshop NH wenje",
         },
         {
           id: 3,
@@ -42,6 +46,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/leds_emmelocked.gif"),
           tags: ["C++", "Arduino"],
           description: "Licht Effect in Escaperoom Emmelocked.",
+          link_short: "",
         },
         {
           id: 4,
@@ -50,6 +55,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/clock_effect.gif"),
           tags: ["C++"],
           description: "Escaperoom Drachten doorgang effect",
+          link_short: "",
         },
         {
           id: 5,
@@ -59,6 +65,7 @@ const store = createStore({
           tags: ["html 5", "css", "Flask", "Python"],
           description:
             "Web app om foto's te verzenden naar gasten. Inclusief een leuke mail.",
+          link_short: "",
         },
         {
           id: 6,
@@ -68,6 +75,7 @@ const store = createStore({
           tags: ["html 5", "css", "Django", "Python"],
           description:
             "Web app Escaperoom Drachten om de uren registratie van personeel bij te houden. Het personeel werkt steeds meer zelfstandig en zo kan iedereen makkelijk zien wat de planning is.",
+          link_short: "",
         },
         {
           id: 7,
@@ -77,6 +85,7 @@ const store = createStore({
           tags: ["PyQt5", "Python"],
           description:
             "GUI voor The Lost Ones. Hints kunnen zo makkelijk getypt worden en laten zien in de kamer",
+          link_short: "",
         },
         {
           id: 8,
@@ -86,6 +95,7 @@ const store = createStore({
           tags: ["Node", "javascript"],
           description:
             "PLC gebaseerd op een Raspberry Pi en een online Portaal om de acties te besturen",
+          link_short: "",
         },
         {
           id: 9,
@@ -94,6 +104,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/buttongame.jpeg"),
           tags: ["C++", "Arduino"],
           description: "Fysieke escaperoom game",
+          link_short: "",
         },
         {
           id: 10,
@@ -102,6 +113,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/todo.jpg"),
           tags: ["html 5", "css", "Django", "Python"],
           description: "TODO app",
+          link_short: "",
         },
         {
           id: 11,
@@ -111,6 +123,7 @@ const store = createStore({
           tags: ["PyQt5", "Python", "Pillow"],
           description:
             "Desktop app om het makkelijker te maken om foto's te watermerken. Het gaat per volledige folder",
+          link_short: "",
         },
         {
           id: 12,
@@ -119,6 +132,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/veet_effect.jpeg"),
           tags: ["C++", "Python"],
           description: "Licht effect voor een Game in The Lost Ones",
+          link_short: "",
         },
         {
           id: 13,
@@ -128,6 +142,7 @@ const store = createStore({
           tags: ["Javascript", "Html", "Css"],
           description:
             "Touchscreen spel. Bezoekers moeten het juiste woord invoeren om verder te kunnen",
+          link_short: "",
         },
         {
           id: 15,
@@ -136,6 +151,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/vue_monster_slayer.jpg"),
           tags: ["Vue", "Javascript", "Html", "Css"],
           description: "Simpel online click game",
+          link_short: "",
         },
         {
           id: 14,
@@ -144,6 +160,7 @@ const store = createStore({
           image: require("@/assets/img/portfolio/websites/holiday_countdown.jpg"),
           tags: ["Javascript", "VueJS", "Html", "SCSS"],
           description: "Een countdown tot de komende feestdagen.",
+          link_short: "",
         },
         {
           id: 16,
@@ -155,6 +172,7 @@ const store = createStore({
             "Een rebuild van een community website. Om verschillende frameworks te vergelijken. Cypress word gebruikt om te testen",
           link:
             "https://github.com/EddieJaoudeCommunity/EddieJaoudeCommunity.github.io/tree/vuejs",
+          link_short: "Vue Branch",
         },
       ],
       internShips: {

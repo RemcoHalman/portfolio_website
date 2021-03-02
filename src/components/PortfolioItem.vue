@@ -9,14 +9,25 @@
         {{ tag }}
       </span>
     </div>
-    <a :href="link" target="_blank" v-if="link">{{ link }}</a>
+    <div v-if="link" class="link">
+      <a :href="link" target="_blank">{{ link_short }}</a>
+    </div>
   </div>
   <!-- tags, link -->
 </template>
 
 <script>
 export default {
-  props: ["id", "name", "description", "image", "tags", "link", "type"],
+  props: [
+    "id",
+    "name",
+    "description",
+    "image",
+    "tags",
+    "link",
+    "type",
+    "link_short",
+  ],
   methods: {
     showModal() {
       this.isModalVisible = true;
@@ -41,8 +52,14 @@ span {
   padding: 5px;
 }
 
-a {
+div.link {
   margin: 10px 0 0 0;
-  background-color: rgba(0, 200, 200, 1);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(5, 128, 1);
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 </style>
