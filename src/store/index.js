@@ -40,6 +40,15 @@ const store = createStore({
           link_short: "Webshop NH wenje",
         },
         {
+          id: 17,
+          name: "Presale Website",
+          type: "Website",
+          image: require("@/assets/img/portfolio/websites/presale.png"),
+          tags: ["Javascript", "Html", "SCSS", "CSS"],
+          description:
+            "Een website gemaakt vanaf een PDF ontwerp. Het geheel is responsive",
+        },
+        {
           id: 3,
           name: "Emmelocked",
           type: "Arduino Game",
