@@ -201,11 +201,18 @@ const store = createStore({
         },
       },
       workExperience: {
+        job_7: {
+          company: "Vanquish Yachts",
+          function: "Monteur Afbouw",
+          start: "6-2021",
+          stopped: "tot op heden",
+          location: "Marknesse",
+        },
         job_6: {
           company: "VodafoneZiggo B.V.",
           function: "Advisor / WiFi Crew",
           start: "12-2020",
-          stopped: "tot op heden",
+          stopped: "6-2021",
           location: "Leeuwarden",
         },
         job_5: {
