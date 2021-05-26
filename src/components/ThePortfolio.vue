@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-items">
+  <div class="portfolio-items flex">
     <portfolio-item
       class="portfolio-item"
       v-for="item in portfolioItems"

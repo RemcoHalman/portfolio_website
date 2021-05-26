@@ -11,13 +11,26 @@
       <h1 class="h1">Around the web</h1>
     </div>
     <div class="name flex justify-center">
-      <h5>Remco Halman</h5>
+      <h5>Remco Halman - {{ now }}</h5>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      now: this.getDate(),
+    };
+  },
+  methods: {
+    getDate() {
+      var date = new Date();
+      var year = date.getFullYear();
+      return year;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

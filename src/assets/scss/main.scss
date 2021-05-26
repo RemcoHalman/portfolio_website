@@ -1,10 +1,5 @@
 @import 'cookienotice';
 
-$warmRed: #540B0E;
-$brownRed: #9E2A2B;
-$warmOrange:#E09F3E;
-$lightColor: #FFF3B0;
-$accentColor: #335C67;
 
 body {
   margin: 0;
@@ -88,12 +83,6 @@ ul {
     color: white;
     border-radius: 10px;
   }
-
-  img {
-    max-width: 100%;
-    max-height: 200px;
-  }
-
 }
 
 // .portfolio-item:nth-child(4n + 1) {

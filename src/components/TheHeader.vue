@@ -9,7 +9,7 @@
     v-if="$route.meta.header === 'home-header'"
     alt=""
     srcset=""
-    class="mh-25"
+    class="object-cover h-96 w-full"
   />
 </template>
 
@@ -20,12 +20,6 @@ export default {
   data() {
     return {
       image: image,
-      // image: {
-      //   backgroundImage: `url('${image}')`,
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundSize: "100%",
-      //   backgroundPosition: "center center",
-      // },
     };
   },
 };
