@@ -1,16 +1,16 @@
 <template>
   <div id="footer" class="grid-container">
     <div class="adres">
-      <h1>Adres</h1>
+      <h1 class="">Adres</h1>
       <p>
         Swannedrift 21<br />
         9022 AR Mantgum
       </p>
     </div>
     <div class="around-the-web">
-      <h1>Around the web</h1>
+      <h1 class="h1">Around the web</h1>
     </div>
-    <div class="name">
+    <div class="name flex justify-center">
       <h5>Remco Halman</h5>
     </div>
   </div>
@@ -21,10 +21,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-#footer {
-  background-color: #2c3e50;
-}
-
 .grid-container {
   color: #fff;
   display: grid;
@@ -34,21 +30,5 @@ export default {};
   grid-template-areas:
     "adres around-the-web"
     "name name";
-}
-
-.adres {
-  grid-area: adres;
-}
-
-.around-the-web {
-  grid-area: around-the-web;
-}
-
-.name {
-  grid-area: name;
-  background-color: #1a252f;
-  h5 {
-    align-self: center;
-  }
 }
 </style>

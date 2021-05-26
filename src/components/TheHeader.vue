@@ -4,12 +4,13 @@
     <router-link to="/cv">Cv</router-link>
     <router-link to="/portfolio">Portfolio</router-link>
   </div>
-  <div
+  <img
+    :src="image"
     v-if="$route.meta.header === 'home-header'"
-    id="header-image"
-    :style="image"
-    class=""
-  ></div>
+    alt=""
+    srcset=""
+    class="mh-25"
+  />
 </template>
 
 <script>
@@ -18,42 +19,16 @@ let image = require("@/assets/img/profile.jpg");
 export default {
   data() {
     return {
-      image: {
-        backgroundImage: `url('${image}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100%",
-        backgroundPosition: "center center",
-      },
+      image: image,
+      // image: {
+      //   backgroundImage: `url('${image}')`,
+      //   backgroundRepeat: "no-repeat",
+      //   backgroundSize: "100%",
+      //   backgroundPosition: "center center",
+      // },
     };
   },
 };
 </script>
 
-<style lang="scss" scoped>
-#header-image {
-  height: 500px;
-}
-
-#nav {
-  background-color: #1a252f;
-  .site {
-    margin-right: 40%;
-  }
-  a {
-    font-weight: bold;
-    color: rgb(170, 170, 170);
-    display: inline-block;
-    padding: 20px 16px;
-    font-size: 17px;
-    text-decoration: none;
-
-    &.router-link-active {
-      color: #fff;
-      text-decoration: underline;
-    }
-    &.router-link-exact-active {
-      color: #fff;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>

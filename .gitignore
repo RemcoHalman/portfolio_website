@@ -25,3 +25,4 @@ pnpm-debug.log*
 # Custom items
 old
 .htaccess
+jsconfig.json

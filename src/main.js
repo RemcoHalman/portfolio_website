@@ -12,6 +12,7 @@ import titleMixin from "./mixins/titleMixin";
 
 // Extras
 import "@/assets/scss/main.scss";
+import "@/assets/css/app.css";
 
 // Global app created
 const app = createApp(App);

@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
-    <h1>Over mij</h1>
-    <p>
+  <div class="home ">
+    <h1 class="">Over mij</h1>
+    <p class="">
       Mijn naam is Remco Halman, ik ben 27 jaar oud en ik ben mede-eigenaar van
       Escaperoom Drachten. Inmiddels hebben wij drie thema kamers gebouwd.
     </p>
-    <p>
+    <p class="">
       Momenteel ben ik mij steeds meer met open source bezig gaan houden. Op
       mijn Github is daarom ook van alles te vinden via:
       <a

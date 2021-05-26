@@ -2,7 +2,7 @@
   <div class="cv-flex">
     <div class="left-bar">
       <div class="contact">
-        <h4>Contact gegevens</h4>
+        <h4 class="my-2 text-lg">Contact gegevens</h4>
         <p>
           Remco Halman <br />
           Swannedrift 21 <br />
@@ -32,7 +32,7 @@
         </p>
       </div>
       <div class="skillset">
-        <h4>Skillset</h4>
+        <h4 class="my-2 text-lg">Skillset</h4>
         <div class="languages">
           <h5>Languages</h5>
           <ul>
@@ -145,8 +145,10 @@ export default {
           margin-bottom: 0;
         }
         ul {
-          margin-top: 5px;
           padding: 0;
+          li {
+            margin-left: 5px;
+          }
         }
       }
     }

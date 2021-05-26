@@ -1,5 +1,5 @@
 <template>
-  <h3>Tech Stack</h3>
+  <h3 class="">Tech Stack</h3>
   <div class="grid-container">
     <div class="languages">
       <h5>Languages</h5>
@@ -57,24 +57,5 @@ export default {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "languages frameworks programmas extra";
-
-  .languages {
-    grid-area: languages;
-  }
-
-  .frameworks {
-    grid-area: frameworks;
-  }
-
-  .programmas {
-    grid-area: programmas;
-  }
-
-  .extra {
-    grid-area: extra;
-  }
-  ul {
-    padding: 0;
-  }
 }
 </style>
