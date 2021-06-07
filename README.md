@@ -4,20 +4,11 @@ Personal website to showcase my work
 
 ## Project setup
 ```bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+npm install # install dependencies
+npm run dev # serve with hot reload at localhost:8080
+npm run build # build for production with minification
+npm run unit # run unit tests
+npm test # run all tests
 ```
 
 ### Customize configuration
